@@ -30,7 +30,7 @@
       "priorityName": "medium",
       "priorityValue": 3,
       "createdAt": "2019/04/20 20:14:28",
-      "status": "ToDo",
+      "status": "Doing",
       "id": 1
     },
     {
@@ -74,7 +74,7 @@
       "priorityName": "high",
       "priorityValue": 2,
       "createdAt": "2019/04/20 20:20:03",
-      "status": "Doing",
+      "status": "ToDo",
       "id": 6
     },
     {
