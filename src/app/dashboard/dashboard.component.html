@@ -1,0 +1,80 @@
+<div class="container list-container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+     
+  <div class="item item-1 todo-container relative-position" fxFlex="33.3%">   
+    <p class="title to-do-title altas py-15">To Do</p>
+    <div class="list"
+    cdkDropList
+    #todoList = "cdkDropList"
+    [cdkDropListData]="todos"
+    [cdkDropListConnectedTo]="[doingList,doneList]"
+    (cdkDropListDropped) = "onDrop($event)">
+    <button mat-mini-fab matTooltip="Add done task" color="primary" class='button-add-task font25 mxy-5' (click)='openDialog(0,true,"ToDo")'>+</button>
+    <div class='relative-position pxy-10'  *ngFor="let todo of todos" cdkDrag>
+      <div class='bgwhite shadow-card mt-0' (click)='openDialog(todo.id,false,"ToDo")' >
+        <button [hidden]="todo.id == 0" mat-mini-fab matTooltip="Edit this task" class='button-edit-task right-5 bg-gray font-black'><mat-icon>edit</mat-icon></button>
+        <div fxLayout fxLayoutGap="10px">
+          <div class="item-1" [hidden]="todo.id == 0" fxFlex="20%">
+            <img class='img-priority' src='../../assets/priority/{{todo.priorityName}}.png' width="53" height="53">
+          </div>
+          <div class="item-2" fxFlex="80%">        
+            <h3 class='mxy-5'>{{todo.title}}</h3>
+            <p class='mxy-5'>{{todo.descripcion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="item item-2 doing-container relative-position" fxFlex="33.3%">
+      <p class="title doing-title altas py-15">Doing</p>
+      <div class="list"
+      cdkDropList
+      #doingList = "cdkDropList"
+      [cdkDropListData]="doings"
+      [cdkDropListConnectedTo]="[todoList,doneList]"
+      (cdkDropListDropped) = "onDrop($event)">
+      <button mat-mini-fab matTooltip="Add doing task" color="primary" class='button-add-task font25 mxy-5' (click)='openDialog(0,true,"Doing")'>+</button>
+      <div class='relative-position pxy-10'  *ngFor="let doing of doings " cdkDrag>
+        <div class='bgwhite shadow-card mt-0' (click)='openDialog(doing.id,false,"Doing")'>
+          <button [hidden]="doing.id == 0"  mat-mini-fab matTooltip="Edit this task" class='button-edit-task right-5 bg-gray font-black'><mat-icon >edit</mat-icon></button>
+          <div fxLayout fxLayoutGap="10px">
+            <div class="item-1" [hidden]="doing.id === 0"  fxFlex="20%"><img class='img-priority' src='../../assets/priority/{{doing.priorityName}}.png' width="53" height="53"></div>
+            <div class="item-2" fxFlex="80%">        
+              <h3 class='mxy-5'>{{doing.title}}</h3>
+              <p class='mxy-5'>{{doing.descripcion}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="item item-3 done-container relative-position" fxFlex="33.3%">
+      <p class="title done-title altas py-15">Done</p>
+      <div class="list"
+      cdkDropList
+      #doneList = "cdkDropList"
+      [cdkDropListData]="completed"
+      [cdkDropListConnectedTo]="[todoList,doingList]"
+      (cdkDropListDropped) = "onDrop($event)" class='pt-10'>
+      <button mat-mini-fab matTooltip="Add done task" color="primary" class='button-add-task font25 mxy-5' (click)='openDialog(0,true,"Done")'>+</button>
+      <div class='relative-position pxy-10'  *ngFor="let complete of completed " cdkDrag>
+        <div class='bgwhite shadow-card mt-0' (click)='openDialog(complete.id,false,"Done")' >
+          <button [hidden]="complete.id == 0"  mat-mini-fab matTooltip="Edit this task" class='button-edit-task right-5 bg-gray font-black'><mat-icon>edit</mat-icon></button>
+          <div fxLayout fxLayoutGap="10px">
+            <div class="item-1" [hidden]="complete.id == 0" fxFlex="20%"><img class='img-priority' src='../../assets/priority/{{complete.priorityName}}.png' width="53" height="53"></div>
+            <div class="item-2" fxFlex="80%">        
+              <h3 class='mxy-5'>{{complete.title}}</h3>
+              <p class='mxy-5'>{{complete.descripcion}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

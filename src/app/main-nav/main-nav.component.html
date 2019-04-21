@@ -1,0 +1,40 @@
+<header><mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+    <mat-toolbar><img class="board-img" src="../../assets/img/Board.svg" width="80"><span>Boards</span></mat-toolbar>
+
+    <mat-nav-list class="pad-left-10" >
+
+      <a (click)="selectBoard($event,board.id,board.name)" mat-list-item *ngFor="let board of Board" >
+        <img class="pad-right-10" src='../../assets/numbers/{{board.id}}.svg' width="30">{{board.name}}
+      </a>
+
+      <div class='button-add-board'>
+        <button (click)='openDialog()' mat-mini-fab color="primary" matTooltip="Add board" class='font25'>+</button>
+        <span class='text-btn-add-board'>New Board</span>
+      </div>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content class="bgwhite">
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span></span><img class="clipboard-img" src="../../assets/img/Clipboard.svg" width="100"><a>Board's {{nameBoard}}</a>
+      <!--<span class="spacer"></span>
+      <img class="user-img" src="../../assets/img/user.svg" width="70" ><a>Username</a>-->
+    </mat-toolbar>
+
+    <app-dashboard  [id_board]=board_select ></app-dashboard>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container></header>

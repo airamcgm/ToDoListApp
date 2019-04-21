@@ -1,0 +1,337 @@
+{
+  "boards": [
+    {
+      "id": 1,
+      "name": "Evolutionary Computing",
+      "createdAt": "2019-05-19 00:00:01"
+    },
+    {
+      "id": 2,
+      "name": "Desarrollo de Sistemas Distribuidos",
+      "createdAt": "2019-05-19 00:00:02"
+    },
+    {
+      "id": 3,
+      "name": "Gestion Empresarial",
+      "createdAt": "2019-05-19 00:00:03"
+    },
+    {
+      "name": "Arquitectura de computadoras",
+      "createdAt": "2019/04/19 18:55:58",
+      "id": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id_board": 1,
+      "title": "Practica Swarm",
+      "description": "Elaborar un algoritmo genetico.",
+      "complete": false,
+      "priorityName": "medium",
+      "priorityValue": 3,
+      "createdAt": "2019/04/20 20:14:28",
+      "status": "ToDo",
+      "id": 1
+    },
+    {
+      "id_board": 2,
+      "title": "Practica 6",
+      "description": "Metodo de replicacion",
+      "complete": false,
+      "priorityName": "highest",
+      "priorityValue": 1,
+      "createdAt": "2019/04/20 20:16:46",
+      "status": "ToDo",
+      "id": 3
+    },
+    {
+      "id_board": 4,
+      "title": "Practica ALU",
+      "description": "Elaborar componente ALU",
+      "complete": false,
+      "priorityName": "high",
+      "priorityValue": 2,
+      "createdAt": "2019/04/20 20:17:54",
+      "status": "Done",
+      "id": 4
+    },
+    {
+      "id_board": 3,
+      "title": "Consultora de negocios",
+      "description": "Informe de la consultora Pconect",
+      "complete": false,
+      "priorityName": "lowest",
+      "priorityValue": 6,
+      "createdAt": "2019/04/20 20:18:51",
+      "status": "Done",
+      "id": 5
+    },
+    {
+      "id_board": 1,
+      "title": "Algoritmos Geneticos",
+      "description": "Implementar TSP, knapsack problem, change making problem",
+      "complete": false,
+      "priorityName": "high",
+      "priorityValue": 2,
+      "createdAt": "2019/04/20 20:20:03",
+      "status": "Doing",
+      "id": 6
+    },
+    {
+      "id_board": 1,
+      "title": "Fractales",
+      "description": "Elaborar programa de dibujo con fractales",
+      "complete": false,
+      "priorityName": "low",
+      "priorityValue": 5,
+      "createdAt": "2019/04/20 20:20:36",
+      "status": "ToDo",
+      "id": 7
+    },
+    {
+      "id_board": 1,
+      "title": "Programacion Dinamica",
+      "description": "Elaborar programas con programacion dinamica",
+      "complete": false,
+      "priorityName": "highest",
+      "priorityValue": 1,
+      "createdAt": "2019/04/20 20:21:46",
+      "status": "Done",
+      "id": 8
+    },
+    {
+      "id_board": 1,
+      "title": "Automatas celulares",
+      "description": "Elaborar reporte de practica",
+      "complete": false,
+      "priorityName": "high",
+      "priorityValue": 2,
+      "createdAt": "2019/04/20 20:22:34",
+      "status": "Doing",
+      "id": 9
+    },
+    {
+      "id_board": 2,
+      "title": "Practica 7 ",
+      "description": "Elaborar sistema de libros",
+      "complete": false,
+      "priorityName": "medium",
+      "priorityValue": 3,
+      "createdAt": "2019/04/20 20:23:17",
+      "status": "ToDo",
+      "id": 10
+    },
+    {
+      "id_board": 2,
+      "title": "Practica 5",
+      "description": "Elaborar relojes sincronizados",
+      "complete": false,
+      "priorityName": "low",
+      "priorityValue": 5,
+      "createdAt": "2019/04/20 20:23:58",
+      "status": "Doing",
+      "id": 11
+    },
+    {
+      "id_board": 2,
+      "title": "Practica 4",
+      "description": "Boinc",
+      "complete": false,
+      "priorityName": "high",
+      "priorityValue": 2,
+      "createdAt": "2019/04/20 20:24:31",
+      "status": "Done",
+      "id": 12
+    },
+    {
+      "id_board": 3,
+      "title": "Visita guiada a La corona",
+      "description": "Agendar visita",
+      "complete": false,
+      "priorityName": "lowest",
+      "priorityValue": 6,
+      "createdAt": "2019/04/20 20:25:20",
+      "status": "ToDo",
+      "id": 13
+    },
+    {
+      "id_board": 3,
+      "title": "Exposicion mercado potencial",
+      "description": "exponer tema",
+      "complete": false,
+      "priorityName": "trivial",
+      "priorityValue": null,
+      "createdAt": "2019/04/20 20:26:15",
+      "status": "Doing",
+      "id": 14
+    },
+    {
+      "id_board": 4,
+      "title": "Archivos de programa",
+      "description": "",
+      "complete": false,
+      "priorityName": "trivial",
+      "priorityValue": null,
+      "createdAt": "2019/04/20 20:26:38",
+      "status": "Doing",
+      "id": 15
+    },
+    {
+      "id_board": 4,
+      "title": "Archivos de datos",
+      "description": "",
+      "complete": false,
+      "priorityName": "trivial",
+      "priorityValue": null,
+      "createdAt": "2019/04/20 20:27:08",
+      "status": "ToDo",
+      "id": 16
+    }
+  ],
+  "tags": [
+    {
+      "id_tarea": 2,
+      "color": "#4CEB82",
+      "name": "introduccion",
+      "id": 1
+    },
+    {
+      "id_tarea": 2,
+      "color": "#747709",
+      "name": "conclusion",
+      "id": 2
+    },
+    {
+      "id_tarea": 3,
+      "color": "#AA14D5",
+      "name": "conectar front end",
+      "id": 5
+    },
+    {
+      "id_tarea": 3,
+      "color": "#F661C9",
+      "name": "replicacion pasiva implementar",
+      "id": 6
+    },
+    {
+      "id_tarea": 3,
+      "color": "#A58583",
+      "name": "reporte",
+      "id": 7
+    },
+    {
+      "id_tarea": 4,
+      "color": "#D86076",
+      "name": "memoria de programa",
+      "id": 8
+    },
+    {
+      "id_tarea": 5,
+      "color": "#76A508",
+      "name": "valor agregado",
+      "id": 9
+    },
+    {
+      "id_tarea": 5,
+      "color": "#8E3EE5",
+      "name": "logo",
+      "id": 10
+    },
+    {
+      "id_tarea": 5,
+      "color": "#D4E63F",
+      "name": "mercado potencial",
+      "id": 11
+    },
+    {
+      "id_tarea": 6,
+      "color": "#E88F25",
+      "name": "algoritmo genetico",
+      "id": 12
+    },
+    {
+      "id_tarea": 6,
+      "color": "#B6BFF3",
+      "name": "comparar con programacion dinamica",
+      "id": 13
+    },
+    {
+      "id_tarea": 7,
+      "color": "#CA201C",
+      "name": "paisaje con fractales",
+      "id": 14
+    },
+    {
+      "id_tarea": 8,
+      "color": "#663EA9",
+      "name": "change making problem",
+      "id": 15
+    },
+    {
+      "id_tarea": 8,
+      "color": "#D98ABE",
+      "name": "tsp",
+      "id": 16
+    },
+    {
+      "id_tarea": 8,
+      "color": "#8E6754",
+      "name": "knapsack problem",
+      "id": 17
+    },
+    {
+      "id_tarea": 9,
+      "color": "#B10960",
+      "name": "instalar golly",
+      "id": 18
+    },
+    {
+      "id_tarea": 10,
+      "color": "#C20AA1",
+      "name": "consistencia",
+      "id": 19
+    },
+    {
+      "id_tarea": 11,
+      "color": "#FEA680",
+      "name": "frontend de relojes",
+      "id": 20
+    },
+    {
+      "id_tarea": 11,
+      "color": "#9C0211",
+      "name": "backend",
+      "id": 21
+    },
+    {
+      "id_tarea": 12,
+      "color": "#50ED33",
+      "name": "Instalar boinc",
+      "id": 22
+    },
+    {
+      "id_tarea": 13,
+      "color": "#2D1CFF",
+      "name": "7 de junio",
+      "id": 23
+    },
+    {
+      "id_tarea": 14,
+      "color": "#4A818E",
+      "name": "elaborar diapositivas",
+      "id": 24
+    },
+    {
+      "id_tarea": 14,
+      "color": "#C97ACD",
+      "name": "buscar video de ejemplo",
+      "id": 25
+    },
+    {
+      "id_tarea": 14,
+      "color": "#93198E",
+      "name": "actividad para la clase",
+      "id": 26
+    }
+  ]
+}

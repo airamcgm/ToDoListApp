@@ -1,0 +1,81 @@
+    <mat-toolbar fxLayout fxLayoutGap="10px" color='primary'>
+        <div class="item-1 mt-10" fxFlex="14%"><img  src='../../assets/priority/{{imagePriority}}.png' width="40" height="40"></div>
+        <div class="item-2" fxFlex="79%">        
+          <h3 class='mxy-5'>{{isNew ? "Add Task" : "Edit Task"}}</h3>
+        </div>
+        <div class="item-3" fxFlex="7%">
+            <button mat-mini-fab color="warn" style='bottom:30px;left:20px;' (click)="cancel()" >X</button>
+        </div>
+    </mat-toolbar>
+    <mat-dialog-content class="bgwhite">
+        <div class='mt-20' fxLayout
+        fxLayout.xs="column"
+        fxLayoutGap="10px"
+        fxLayoutGap.xs="0">
+            <mat-form-field class="example-full-width">
+                <input [(ngModel)]="taskDetail.title" matInput placeholder="Name's Task" value="">
+            </mat-form-field>
+            <mat-checkbox class='pb-20' *ngIf="!isNew" [(ngModel)]="taskDetail.complete" >Task completed</mat-checkbox>
+        </div>
+        <div fxLayout="column">
+            <mat-form-field>
+                <mat-label>Description</mat-label>
+                <textarea [(ngModel)]="taskDetail.description"  matInput
+                          cdkTextareaAutosize
+                          #autosize="cdkTextareaAutosize"
+                          cdkAutosizeMinRows="1"
+                          cdkAutosizeMaxRows="12">
+                </textarea>
+            </mat-form-field>
+        </div>
+        <div fxLayout="column">
+          <mat-form-field class=" example-chip-list">
+            <mat-chip-list #chipList>
+              <mat-chip *ngFor="let tag of tags" [ngStyle]="{'background-color':tag.color}"  [selectable]="selectable"
+                       [removable]="removable" (removed)="remove(tag)">
+                {{tag.name}}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+              </mat-chip>
+              <input placeholder="New tag..."
+                     [matChipInputFor]="chipList"
+                     [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                     [matChipInputAddOnBlur]="addOnBlur"
+                     (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+          </mat-form-field>
+        </div>
+
+        <div class='mt-20' fxLayout
+          fxLayout.xs="column"
+          fxLayoutAlign="center"
+          fxLayoutGap="10px"
+          fxLayoutGap.xs="0">
+          <mat-form-field >
+            <mat-label>Priority</mat-label>
+            <mat-select [(ngModel)]="taskDetail.priorityName"  matNativeControl>
+              <mat-option value="highest-1"><img class='img-priority' src='../../assets/priority/highest.png' width="20" height="20">Highest</mat-option>
+              <mat-option value="high-2"><img class='img-priority' src='../../assets/priority/high.png' width="20" height="20">High</mat-option>
+              <mat-option value="medium-3"><img class='img-priority' src='../../assets/priority/medium.png' width="20" height="20">Medium</mat-option>
+              <mat-option value="low-5"><img class='img-priority' src='../../assets/priority/low.png' width="20" height="20">Low</mat-option>
+              <mat-option value="lowest-6"><img class='img-priority' src='../../assets/priority/lowest.png' width="20" height="20">Lowest</mat-option>
+              <mat-option value="trivial-4"><img class='img-priority' src='../../assets/priority/trivial.png' width="20" height="20">Trivial</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field  *ngIf="!isNew">
+              <mat-label>Change Board</mat-label>
+              <mat-select [(ngModel)]="taskDetail.id_board"  matNativeControl>
+                <mat-option *ngFor="let board of Board" [value]="board.id">
+                  <img class='img-priority' src='../../assets/numbers/{{board.id}}.svg' width="20" height="20"><span>{{board.name}}</span>
+                </mat-option>
+              </mat-select>
+          </mat-form-field>
+        </div>
+        
+    </mat-dialog-content>
+    <mat-dialog-actions class='relative-position bgwhite'>
+      <div class='absolute-position right-20'>
+          <button *ngIf="!isNew" mat-button (click)="delete()" color='warn'>Delete</button>
+          <button mat-raised-button (click)="save()">Save</button>
+      </div>
+    </mat-dialog-actions>
+

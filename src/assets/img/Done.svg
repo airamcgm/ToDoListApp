@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 551.936" style="enable-background:new 0 0 512 551.936;" xml:space="preserve">
+<g id="_x23_document-holder">
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="256" cy="256.005" r="256"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<circle style="clip-path:url(#SVGID_2_);fill:#26424B;" cx="256" cy="256.005" r="256"/>
+		<rect x="105.387" y="139.456" style="clip-path:url(#SVGID_2_);fill:#DB605A;" width="302.985" height="412.479"/>
+		<rect x="125.387" y="163.384" style="clip-path:url(#SVGID_2_);fill:#FFFFFF;" width="262.985" height="362.479"/>
+		<rect x="233.38" y="104.441" style="clip-path:url(#SVGID_2_);fill:#E8B750;" width="47" height="37"/>
+		<rect x="233.38" y="117.441" style="opacity:0.22;clip-path:url(#SVGID_2_);" width="47" height="20"/>
+		<g style="clip-path:url(#SVGID_2_);">
+			<g>
+				<path style="fill:#26424B;" d="M205.009,277.441h-63v-63h63V277.441z M152.009,267.441h43v-43h-43V267.441z"/>
+			</g>
+			<g>
+				<path style="fill:#78C1B0;" d="M168.419,265.806l-2.786-7.257c-1.8-7.923-8.006-15.762-10.245-18.114l7.242-6.895
+					c0.292,0.307,5.322,5.646,9.158,13.156c7.877-10.489,23.274-27.256,41.221-27.256v10
+					C196.482,229.441,168.419,265.806,168.419,265.806z"/>
+			</g>
+		</g>
+		<path style="clip-path:url(#SVGID_2_);fill:#E8B750;" d="M308.88,170.441h-104c-3.314,0-6-2.686-6-6v-34c0-3.314,2.686-6,6-6h104
+			c3.314,0,6,2.686,6,6v34C314.88,167.754,312.193,170.441,308.88,170.441z"/>
+		<g style="clip-path:url(#SVGID_2_);">
+			<g>
+				<path style="fill:#26424B;" d="M205.009,374.441h-63v-63h63V374.441z M152.009,364.441h43v-43h-43V364.441z"/>
+			</g>
+			<g>
+				<path style="fill:#78C1B0;" d="M168.419,362.806l-2.786-7.257c-1.8-7.923-8.006-15.762-10.245-18.114l7.242-6.895
+					c0.292,0.307,5.322,5.646,9.158,13.156c7.877-10.489,23.274-27.256,41.221-27.256v10
+					C196.482,326.441,168.419,362.806,168.419,362.806z"/>
+			</g>
+		</g>
+		<g style="clip-path:url(#SVGID_2_);">
+			<g>
+				<path style="fill:#26424B;" d="M205.009,471.441h-63v-63h63V471.441z M152.009,461.441h43v-43h-43V461.441z"/>
+			</g>
+			<g>
+				<path style="fill:#78C1B0;" d="M168.419,459.806l-2.786-7.257c-1.8-7.923-8.006-15.762-10.245-18.114l7.242-6.895
+					c0.292,0.307,5.322,5.646,9.158,13.156c7.877-10.489,23.274-27.256,41.221-27.256v10
+					C196.482,423.441,168.419,459.806,168.419,459.806z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Livello_1">
+</g>
+</svg>

@@ -1,0 +1,23 @@
+<mat-toolbar fxLayout fxLayoutGap="10px" color='primary'>
+    <div class="item-1" fxFlex="17%"><button mat-mini-fab class='font25' color=primary>+</button></div>
+    <div class="item-2" fxFlex="76%">        
+      <h3 class='mxy-5'>Add new board</h3>
+    </div>
+    <div class="item-3" fxFlex="7%">
+        <button mat-mini-fab color="warn" style='bottom:30px;left:20px;' (click)="cancel()" >X</button>
+    </div>
+</mat-toolbar>
+<mat-dialog-content class="bgwhite">
+    <div class='row ml-10  mt-20'>
+        <mat-form-field class="example-full-width">
+            <input matInput [(ngModel)]="boardDetails.name" placeholder="Name's Board" value="">
+          </mat-form-field>
+    </div> 
+</mat-dialog-content>
+<mat-dialog-actions class='relative-position bgwhite'>
+  <div class='absolute-position right-20'>
+      <button mat-button (click)="cancel()">Cancel</button>
+      <button mat-raised-button (click)="save()">Save</button>
+  </div>
+</mat-dialog-actions>
+
