@@ -87,6 +87,3 @@ Se agregó identificadores a cada board, task y tag para poder relacionarse entr
 
 ## Build
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Link del proyecto
-http://18.191.255.153/app/
