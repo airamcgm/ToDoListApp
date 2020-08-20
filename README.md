@@ -1,4 +1,4 @@
-# DashboardApp
+# To Do List App
 
 DashboardApp es un organizador de tareas, las cuales se pueden situar en diferentes boards, y diferentes listas:
 * To Do para las tareas por hacer
